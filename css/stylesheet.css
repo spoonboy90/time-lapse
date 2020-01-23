@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/*Form*/
+ul, li {
+font-size: 16px;
+    color: #666;
+}
+
+ul.cform_fields {
+	padding: 0;
+}
+
+li.cform_field {
+    margin-top: 8px;
+    padding-top: 0;
+}
+
+li.cform_input {
+    margin-top: 8px;
+    padding-top: 0;
+}
+
+input.full {width: 100%;}
+
+.cform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    font-size: inherit;
+    font-family: inherit;
+    padding: 5px 4px;
+   }
+
+.cform_fields {
+    margin: 0;
+    list-style-type: none;
+    display: block;
+}
+
+li.cform_lable {
+font-weight: 700;
+    font-size: inherit;
+    margin-top: 16px;
+    padding-top: 0;
+}
+
+.cform_priv-notice {
+font-size: 12px;
+    color: #666;
+	margin-top:8px;
+}
+.cform_req-notice {
+font-size: 12px;
+    color: #666;
+	margin-top:8px;
+}
+
+.cform_required {
+font-weight: 400!important;
+    font-size: 12px!important;
+	color: #ff0000!important;	
+}
+.cform_stared {
+font-weight: 400!important;
+    font-size: 12px!important;
+	color: #666!important;	
+}
+
+.cform_submit {
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:1px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 38px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.cform_submit:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+.cform_submit:active {
+	position:relative;
+	top:1px;
+}
+.error
+{
+color:#ff0000!important;
+}
+
+#server_response {
+		margin-top:8px;
+}
+
+.sucess {
+	color: #00ff00;
+}
